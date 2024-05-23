@@ -1,12 +1,21 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
+import "./main.css";
+import Navbar from "./components/navbar/Navbar";
+import HomeInteriors from "./components/homeinteriors/HomeInteriors";
+import Works from "./components/works/Works";
+import Blogs from "./components/blogs/Blogs";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
-    <div>
-      <h1>start</h1>
-    </div>
+    <>
+      <Navbar />
+      <main style={{ overflow: "hidden" }}>
+        <HomeInteriors />
+        <Works />
+        <Blogs />
+      </main>
+      <Footer />
+    </>
   );
 }
 
